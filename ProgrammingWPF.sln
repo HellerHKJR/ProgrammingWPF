@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P105_WrapPanelDemo", "P105_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P106_DockPanelDemo", "P106_DockPanelDemo\P106_DockPanelDemo.csproj", "{14996AB8-6368-40C9-A027-1A15EDA89D12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P114_GridDemo", "P114_GridDemo\P114_GridDemo.csproj", "{6CBFAF16-5B83-4523-BEC9-B0A49A9718D3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{14996AB8-6368-40C9-A027-1A15EDA89D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14996AB8-6368-40C9-A027-1A15EDA89D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14996AB8-6368-40C9-A027-1A15EDA89D12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CBFAF16-5B83-4523-BEC9-B0A49A9718D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CBFAF16-5B83-4523-BEC9-B0A49A9718D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CBFAF16-5B83-4523-BEC9-B0A49A9718D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CBFAF16-5B83-4523-BEC9-B0A49A9718D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
