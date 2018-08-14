@@ -1,0 +1,34 @@
+﻿<Window x:Class="P065_ControlTemplateDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P065_ControlTemplateDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="300">
+    <StackPanel Orientation="Vertical">
+        <Button x:Name="btnSome" Content="Some" Width="100" Height="50">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Fill="Orange"/>
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="txtSome" Content="sss">
+            <Label.Template>
+                <ControlTemplate TargetType="Label">
+                    <Grid>
+                        <Rectangle Fill="SkyBlue"/>
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" />
+                    </Grid>
+                </ControlTemplate>
+            </Label.Template>
+        </Label>
+        <!--Content를 갖을 수 있는 컨트롤에 대한 모양만 변경할 경우 사용함.
+        Style과 다른 점은 Style의 경우 알려진 속성값만을 변경한다는 것임.
+        Trigger의 사용으로 마우스의 동작등에 대한 추가가 필요할 것으로 생각됨.-->
+    </StackPanel>
+</Window>
