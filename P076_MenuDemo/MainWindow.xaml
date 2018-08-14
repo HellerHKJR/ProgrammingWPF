@@ -6,20 +6,27 @@
         xmlns:local="clr-namespace:P076_MenuDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="150" Width="300">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-        <Menu>
+    <DockPanel>        
+        <Menu DockPanel.Dock="Top">
             <MenuItem Header="Window" x:Name="menuRootFirst">
                 <MenuItem Header="New1" x:Name="menuRootFirstSubFirst"/>
                 <MenuItem Header="New2" x:Name="menuRootFirstSubSecond"/>
                 <MenuItem Header="New3" x:Name="menuRootFirstSubThird"/>
                 <MenuItem Header="New4" x:Name="menuRootFirstSubForth"/>
             </MenuItem>
-            <!--TODO ... Routing Event...-->
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Cu_t" Command="Cut"/>
+                <MenuItem Header="_Copy" Command="ApplicationCommands.Copy"/>
+                <MenuItem Header="_Paste" Command="ApplicationCommands.Paste"/>
+            </MenuItem>
         </Menu>
-    </Grid>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Command="Cut" Content="Cut" />
+                <Button Command="Copy" Content="Copy" />
+                <Button Command="Paste" Content="Paste" />
+            </ToolBar>
+        </ToolBarTray>
+        <TextBox/>
+    </DockPanel>
 </Window>
