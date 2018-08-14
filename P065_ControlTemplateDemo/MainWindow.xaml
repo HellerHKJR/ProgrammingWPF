@@ -30,5 +30,20 @@
         <!--Content를 갖을 수 있는 컨트롤에 대한 모양만 변경할 경우 사용함.
         Style과 다른 점은 Style의 경우 알려진 속성값만을 변경한다는 것임.
         Trigger의 사용으로 마우스의 동작등에 대한 추가가 필요할 것으로 생각됨.-->
+        <Button Width="80" Height="50">
+            <Button.LayoutTransform>
+                <ScaleTransform ScaleX="1" ScaleY="1.5" />
+            </Button.LayoutTransform>
+            <StackPanel Orientation="Horizontal">
+                <Canvas Width="20" Height="20" VerticalAlignment="Center">
+                    <Ellipse Stroke="Red" Canvas.Left="0" Canvas.Top="0" Width="20" Height="20"/>
+                    <Ellipse Stroke="Black" Canvas.Left="5" Canvas.Top="7" Width="2" Height="2"/>
+                    <Ellipse Stroke="Black" Canvas.Left="13" Canvas.Top="7" Width="2" Height="2"/>
+                    <Path Stroke="Black" Canvas.Left="1" Canvas.Top="1"  Data="M 5, 10 A 3, 3 0 0 0 13,10" />
+                </Canvas>
+                <TextBlock Margin="5,0,0,0" VerticalAlignment="Center">버튼</TextBlock>
+            </StackPanel>
+        </Button>
+        <!--Content는 항상 한개만 갖을 수 있으며, 위 예제는 Content에 StackPanel을 삽입한 경우이다.-->
     </StackPanel>
 </Window>
