@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P076_MenuDemo", "P076_MenuD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P101_StackPanelDemo", "P101_StackPanelDemo\P101_StackPanelDemo.csproj", "{7059C8EA-1FE3-4E9D-892A-467B4687772A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P105_WrapPanelDemo", "P105_WrapPanel\P105_WrapPanelDemo.csproj", "{2AEAB21B-5851-4386-AA62-5C4C8F18C45C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P106_DockPanelDemo", "P106_DockPanelDemo\P106_DockPanelDemo.csproj", "{14996AB8-6368-40C9-A027-1A15EDA89D12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{7059C8EA-1FE3-4E9D-892A-467B4687772A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7059C8EA-1FE3-4E9D-892A-467B4687772A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7059C8EA-1FE3-4E9D-892A-467B4687772A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AEAB21B-5851-4386-AA62-5C4C8F18C45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEAB21B-5851-4386-AA62-5C4C8F18C45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AEAB21B-5851-4386-AA62-5C4C8F18C45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEAB21B-5851-4386-AA62-5C4C8F18C45C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14996AB8-6368-40C9-A027-1A15EDA89D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14996AB8-6368-40C9-A027-1A15EDA89D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14996AB8-6368-40C9-A027-1A15EDA89D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14996AB8-6368-40C9-A027-1A15EDA89D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
