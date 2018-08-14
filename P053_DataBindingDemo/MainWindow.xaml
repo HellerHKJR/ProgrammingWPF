@@ -6,14 +6,26 @@
         xmlns:local="clr-namespace:P053_DataBindingDemo"
         mc:Ignorable="d"
         Title="Data Binding Demo" Height="150" Width="300">
-    <DockPanel>
+    <DockPanel x:Name="rootPanel">
         <TextBlock DockPanel.Dock="Top">
             <TextBlock FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Center">이름:</TextBlock>
-            <TextBox Width="50"/>
+            <TextBox x:Name="txtName" Width="50" Text="{Binding Path=Name, Mode=OneWay}"/>
             <TextBlock FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Center">별명:</TextBlock>
-            <TextBox Width="50"/>
+            <TextBox x:Name="txtNick" Width="50" Text="{Binding Path=Nick, Mode=OneWay}"/>
+            <!--Mode=OneWay 함으로써, 자동으로 작동되는 것에 대해 TextBox는 받는 역할만 한다. 다른 모드에 대해서는 나중에... -->
         </TextBlock>
-        <Button DockPanel.Dock="Bottom">추가</Button>
-        <ListBox />
+        <Button x:Name="btnAdd" DockPanel.Dock="Bottom" Click="btnAdd_Click">추가</Button>
+        <ListBox ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True">
+            <!--ItemsSource: 리스트 형식의 Collection인 ObserveCollection으로 상위 컨트롤 DockPanel에서 DataContext 되어 있음을 정의 -->
+            <!--IsSynchronizedWithCurrentItem : 현재의 선택된 Item에 대해 Name과 Nick을 동기화 하겠다는 의미-->
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+                        <TextBlock Text="{Binding Path=Name}"/>
+                        <TextBlock Text="{Binding Path=Nick}"/>
+                    </TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </DockPanel>
 </Window>

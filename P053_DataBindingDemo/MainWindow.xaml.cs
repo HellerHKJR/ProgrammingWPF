@@ -19,9 +19,18 @@ namespace P053_DataBindingDemo
     /// </summary>
     public partial class MainWindow : Window
     {
+        Nicknames names;
         public MainWindow()
         {
             InitializeComponent();
+
+            names = new Nicknames();
+            rootPanel.DataContext = names;
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            names.Add(new Nickname(txtName.Text, txtNick.Text));
         }
     }
 }
