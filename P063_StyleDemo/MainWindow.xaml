@@ -1,0 +1,23 @@
+﻿<Window x:Class="P063_StyleDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P063_StyleDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="150" Width="300">
+    <Window.Resources>
+        <Style x:Key="textboxStyle1" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" Style="{StaticResource textboxStyle1}">ABCD한글</TextBlock>
+        <TextBlock DockPanel.Dock="Bottom" Style="{StaticResource textboxStyle1}">ABCD또한글</TextBlock>
+        <Border BorderThickness="1" BorderBrush="Orange">
+            <Image Source="Images/Heller Logo.jpg"/>
+        </Border>
+    </DockPanel>
+</Window>
