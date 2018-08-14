@@ -1,0 +1,19 @@
+﻿<Window x:Class="P053_DataBindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P053_DataBindingDemo"
+        mc:Ignorable="d"
+        Title="Data Binding Demo" Height="150" Width="300">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top">
+            <TextBlock FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Center">이름:</TextBlock>
+            <TextBox Width="50"/>
+            <TextBlock FontWeight="Bold" FontStyle="Italic" VerticalAlignment="Center">별명:</TextBlock>
+            <TextBox Width="50"/>
+        </TextBlock>
+        <Button DockPanel.Dock="Bottom">추가</Button>
+        <ListBox />
+    </DockPanel>
+</Window>

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P028_MyFirstWpfApp", "P028_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P050_GridDemo", "P050_GridDemo\P050_GridDemo.csproj", "{C7865801-D64E-48BB-A58B-84727A527B6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P053_DataBindingDemo", "P053_DataBindingDemo\P053_DataBindingDemo.csproj", "{7E9F4899-7F8D-4E82-B8E3-28C30DCAE1F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C7865801-D64E-48BB-A58B-84727A527B6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7865801-D64E-48BB-A58B-84727A527B6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7865801-D64E-48BB-A58B-84727A527B6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E9F4899-7F8D-4E82-B8E3-28C30DCAE1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E9F4899-7F8D-4E82-B8E3-28C30DCAE1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E9F4899-7F8D-4E82-B8E3-28C30DCAE1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E9F4899-7F8D-4E82-B8E3-28C30DCAE1F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
