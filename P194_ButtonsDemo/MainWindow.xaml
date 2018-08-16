@@ -105,7 +105,7 @@
                             <TextBlock>조금 특별한</TextBlock>
                             <MediaElement Source="C:\Users\public\videos\Sample Videos\Butterfly.wmv" Width="80" />
                             <TextBlock> 더 </TextBlock>
-                            <Ellipse x:Name="tmpEllipse" Width="10" Height="10" Fill="Red" />
+                            <Ellipse x:Name="tmpEllipse" Width="15" Height="{Binding Width, RelativeSource={RelativeSource Self}}" Fill="Red" />
                             <Button Content="누르세" Margin="1"/>
                         </StackPanel>
                         </Border>
