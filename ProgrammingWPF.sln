@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P128_ViewBoxLayoutDemo", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Other01_Command", "Other01_Command\Other01_Command.csproj", "{06C45111-F034-414E-B953-2EBA67C488AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P194_ButtonsDemo", "P194_ButtonsDemo\P194_ButtonsDemo.csproj", "{0BDABF7B-7D4D-4948-8424-6A472B762F45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{06C45111-F034-414E-B953-2EBA67C488AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06C45111-F034-414E-B953-2EBA67C488AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06C45111-F034-414E-B953-2EBA67C488AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDABF7B-7D4D-4948-8424-6A472B762F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDABF7B-7D4D-4948-8424-6A472B762F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDABF7B-7D4D-4948-8424-6A472B762F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDABF7B-7D4D-4948-8424-6A472B762F45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
