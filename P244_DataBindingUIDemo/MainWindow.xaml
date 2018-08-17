@@ -1,0 +1,53 @@
+﻿<Window x:Class="P244_DataBindingUIDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P244_DataBindingUIDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Vertical">
+        <TextBlock x:Name="tmpTextBlock" Background="Red">Something</TextBlock>
+        <Button Width="100" Margin="10" BorderThickness="1" 
+                BorderBrush="{Binding ElementName=tmpTextBlock, Path=Background}" Click="Button_Click">TEST Button</Button>
+        <Separator BorderBrush="Blue" BorderThickness="2"/>
+        <Border BorderBrush="Black" BorderThickness="1">
+            <Grid x:Name="targetGrid">
+                <Grid.Resources>
+                    <local:Person x:Key="Tom"/>
+                    <local:IntegerToColor x:Key="CVT" />
+                </Grid.Resources>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>                
+                <TextBlock Text="이름: " Margin="5"/>
+                <TextBox Grid.Column="1" Margin="5"/>
+                <TextBlock Grid.Row="1" Text="나이: " Margin="5"/>
+                <TextBox x:Name="tmpTextBoxAge" Grid.Row="1" Grid.Column="1" Margin="5" DataContext="{StaticResource Tom}" Background="{Binding Path=Age, Converter={StaticResource CVT}}">
+                    <TextBox.Text>
+                        <Binding Path="Age" Mode="TwoWay" UpdateSourceTrigger="PropertyChanged">
+                            <!-- NotifyOnValidationError="True"-->
+                            <Binding.ValidationRules>
+                                <!--<ExceptionValidationRule/>-->
+                                <local:AgeRangeRule />
+                            </Binding.ValidationRules>
+                        </Binding> 
+                    </TextBox.Text>
+                    <TextBox.ToolTip>
+                        <Binding ElementName="tmpTextBoxAge" Path="(Validation.Errors)[0].ErrorContent"/>
+                    </TextBox.ToolTip>
+                </TextBox>
+                <Button HorizontalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" Margin="5" 
+                        Background="{Binding Path=Background, ElementName=tmpTextBoxAge}">확인버튼</Button>
+            </Grid>
+        </Border>
+        <Separator BorderBrush="Blue" BorderThickness="2"/>
+        
+    </StackPanel>
+</Window>
