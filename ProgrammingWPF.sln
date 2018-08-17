@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P209_ListViewDemo", "P209_L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P212_ListViewDemo2", "P212_ListViewDemo2\P212_ListViewDemo2.csproj", "{D1F20A30-0267-4452-9819-96364DCBC8B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P213_TreeviewDemo", "P213_TreeviewDemo\P213_TreeviewDemo.csproj", "{85599B0B-B7A7-4E4B-A760-E36CE8920986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P220_ToolbarDemo", "P220_ToolbarDemo\P220_ToolbarDemo.csproj", "{99B8FA96-FAE1-4E5C-8BA8-03578EC61724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{D1F20A30-0267-4452-9819-96364DCBC8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1F20A30-0267-4452-9819-96364DCBC8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1F20A30-0267-4452-9819-96364DCBC8B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85599B0B-B7A7-4E4B-A760-E36CE8920986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85599B0B-B7A7-4E4B-A760-E36CE8920986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85599B0B-B7A7-4E4B-A760-E36CE8920986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85599B0B-B7A7-4E4B-A760-E36CE8920986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B8FA96-FAE1-4E5C-8BA8-03578EC61724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B8FA96-FAE1-4E5C-8BA8-03578EC61724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B8FA96-FAE1-4E5C-8BA8-03578EC61724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B8FA96-FAE1-4E5C-8BA8-03578EC61724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
