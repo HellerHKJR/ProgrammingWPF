@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Other01_Command", "Other01_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P194_ButtonsDemo", "P194_ButtonsDemo\P194_ButtonsDemo.csproj", "{0BDABF7B-7D4D-4948-8424-6A472B762F45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P209_ListViewDemo", "P209_ListViewDemo\P209_ListViewDemo.csproj", "{B3C1B7C4-3830-4F2C-8196-0520EAFB4F4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P212_ListViewDemo2", "P212_ListViewDemo2\P212_ListViewDemo2.csproj", "{D1F20A30-0267-4452-9819-96364DCBC8B9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{0BDABF7B-7D4D-4948-8424-6A472B762F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BDABF7B-7D4D-4948-8424-6A472B762F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BDABF7B-7D4D-4948-8424-6A472B762F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3C1B7C4-3830-4F2C-8196-0520EAFB4F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C1B7C4-3830-4F2C-8196-0520EAFB4F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C1B7C4-3830-4F2C-8196-0520EAFB4F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C1B7C4-3830-4F2C-8196-0520EAFB4F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1F20A30-0267-4452-9819-96364DCBC8B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F20A30-0267-4452-9819-96364DCBC8B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F20A30-0267-4452-9819-96364DCBC8B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F20A30-0267-4452-9819-96364DCBC8B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
